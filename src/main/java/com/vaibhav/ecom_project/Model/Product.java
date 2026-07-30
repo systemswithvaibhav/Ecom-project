@@ -1,37 +1,48 @@
 package com.vaibhav.ecom_project.Model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+import org.jspecify.annotations.Nullable;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
+
     private String name;
-    private String description;
+
     private String brand;
+
+    private String description;
+
     private BigDecimal price;
+
     private String category;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING , pattern = "dd-MM-yyyy")
+    private Integer stockQuantity;
+
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    @Temporal(TemporalType.DATE)
     private Date releaseDate;
-    private Boolean available;
-    private int quantity;
 
+    private Boolean productAvailable;
 
-}
+    private String imageName;
+
+    private String imageType;
+
+    @Lob
+    @Column(columnDefinition = "LONGBLOB")
+    private byte[] imageData;}
+

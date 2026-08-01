@@ -75,6 +75,9 @@ src
 
 <img width="1697" height="852" alt="image" src="https://github.com/user-attachments/assets/a87d7b84-eb45-489a-af57-6369de7f39e0" />
 
+<img width="1916" height="966" alt="Screenshot 2026-07-31 201319" src="https://github.com/user-attachments/assets/840cb5b2-3df6-49a2-8773-049d3085a46e" />
+
+
 
 ### Search
 

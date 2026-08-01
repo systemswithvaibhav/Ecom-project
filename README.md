@@ -23,7 +23,7 @@ A full-stack E-Commerce application built using **Spring Boot** and **React**. T
 ## 🛠️ Tech Stack
 
 ### Backend
-- Java 21
+- Java 25
 - Spring Boot
 - Spring Data JPA
 - Hibernate

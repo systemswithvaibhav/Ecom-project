@@ -156,6 +156,6 @@ http://localhost:8081
 
 ## 👨‍💻 Author
 
-**Vaibhav Sharma**
+**Vaibhav Sisodia**
 
 GitHub: https://github.com/MLwithvaibhav
